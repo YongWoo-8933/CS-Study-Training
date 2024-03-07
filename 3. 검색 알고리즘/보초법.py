@@ -1,11 +1,14 @@
 from typing import Any, Sequence
+import copy
 
 def sequential_search(arr: Sequence, key: Any) -> int:
-    for i in range(len(arr)):
-        if arr[i] == key: 
-            return i
-    else:
-        return -1
+    new_arr = copy.deepcopy(arr)
+    new_arr.append(key)
+    i = 0
+    while True:
+        if new_arr[i] == key: break
+        i += 1
+    return -1 if i == len(arr) else i
 
 array = [6, 8, 11, 30, 42, 5, 29, 13]
 
