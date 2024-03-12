@@ -8,3 +8,5 @@ class FixedStack:
     class Full(Exception): pass
 
     
+
+    
