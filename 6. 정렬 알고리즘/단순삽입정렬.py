@@ -11,7 +11,6 @@ def straight_insertion_sortied(lst: list) -> list:
             else:
                 lst[j+1] = temp
                 break
-        print(lst)
     return lst
 
 lst_1 = [1, 3, 9, 4, 7, 8, 6]
