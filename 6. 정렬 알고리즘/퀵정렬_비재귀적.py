@@ -1,7 +1,6 @@
 """
 => 퀵 정렬의 비재귀적 구현 방식으로, 간단한 Stack을 통해 구현
 """
-
 from typing import Any
 
 
